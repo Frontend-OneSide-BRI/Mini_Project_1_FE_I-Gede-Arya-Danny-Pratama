@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Web Gallery- Gallery</title>
+    <title>Web Gallery - Gallery</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -9,170 +9,14 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <style>
-      body {
-        line-height: 1.5;
-        font-family: sans-serif;
-      }
-      * {
-        margin: 0;
-        box-sizing: border-box;
-      }
-      /* .container {
-            max-width: 1170px;
-            margin: auto;
-          } */
-
-      .container .heading {
-        font-size: 30px;
-        padding-bottom: 25px;
-        text-align: center;
-        color: #ffffff;
-      }
-
-      .center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .container #search-box {
-        width: 100%;
-        border: 3px solid #000;
-        padding: 12px 15px;
-        font-size: 20px;
-        text-align: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50px;
-      }
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      img {
-        max-width: 100%;
-        vertical-align: middle;
-      }
-      /*.gallery*/
-      .gallery {
-        width: 100%;
-        display: block;
-        min-height: 100vh;
-        background-color: #2a2932;
-        padding: 100px 0;
-      }
-
-      .gallery .gallery-filter {
-        padding: 0 15px;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      .gallery .gallery-filter .filter-item {
-        color: #ffffff;
-        font-size: 18px;
-        text-transform: uppercase;
-        display: inline-block;
-        margin: 0 10px;
-        cursor: pointer;
-        border-bottom: 2px solid transparent;
-        line-height: 1.2;
-        transition: all 0.3s ease;
-      }
-      .gallery .gallery-filter .filter-item.active {
-        color: #ff9800;
-        border-color: #ff9800;
-      }
-      .gallery .gallery-item {
-        width: calc(100% / 4);
-        padding: 20px;
-        /* background-color: aqua; */
-      }
-
-      .gallery .gallery-item-inner {
-        width: 80%;
-        /* background-color: #ff9800; */
-      }
-
-      .gallery .gallery-item-inner img {
-        width: 100%;
-        cursor: pointer;
-      }
-
-      .gallery .gallery-item-inner .card {
-        width: 100%;
-        cursor: pointer;
-      }
-
-      .gallery .gallery-item.show {
-        animation: fadeIn 0.5s ease;
-      }
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-      .gallery .gallery-item.hide {
-        display: none;
-      }
-
-      /*responsive*/
-      @media (max-width: 1920px) {
-        .gallery .gallery-item {
-          width: calc(100% / 4);
-          padding: 20px;
-        }
-        .gallery .gallery-item-inner .card {
-          width: 15rem;
-        }
-      }
-      @media (max-width: 1028px) {
-        .gallery .gallery-item {
-          width: calc(100% / 3);
-          padding: 20px;
-        }
-        .gallery .gallery-item-inner .card {
-          width: 12rem;
-        }
-      }
-      @media (max-width: 768px) {
-        .gallery .gallery-filter .filter-item {
-          margin-bottom: 10px;
-        }
-        .gallery .gallery-item-inner {
-          width: 100%;
-          margin: auto;
-        }
-        .gallery .gallery-item {
-          width: calc(100% / 2);
-          padding: 20px;
-          /* background-color: red; */
-        }
-        .gallery .gallery-item-inner .card {
-          width: 20rem;
-        }
-      }
-      @media (max-width: 480px) {
-        .gallery .gallery-item {
-          width: 100%;
-        }
-        .gallery .gallery-item-inner .card {
-          width: 23.5rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles/gallery.css" />
   </head>
   <body>
-    <!-- INI BAGIAN HEADER -->
+    <!-- START HEADER -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-success">
-        <a class="navbar-brand font-weight-bold text-white" href="#">
-          <h4>Web Gallery Arya</h4>
+        <a class="navbar-brand font-weight-bold text-white" href="index.html"
+          ><h4>Web Gallery Arya</h4>
         </a>
         <button
           class="navbar-toggler"
@@ -188,25 +32,21 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link font-weight-bold text-white" href="index.html">
-                <h5>Home</h5>
-              </a>
+              <a class="nav-link text-white" href="index.html"><h5>Home</h5></a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link font-weight-bold text-white"
-                href="gallery.html"
+              <a class="nav-link text-white" href="gallery.html"
+                ><h5>Gallery</h5></a
               >
-                <h5>Gallery</h5>
-              </a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
+    <!-- START MAIN -->
     <main>
-      <!-- INI BAGIAN GALLERY -->
+      <!-- START SEARCH BAR AND FILTER -->
       <section class="gallery">
         <div class="container">
           <h1 class="heading">What do you want to search?</h1>
@@ -223,12 +63,13 @@
             </div>
           </div>
 
+          <!-- START GALLERY ITEM -->
           <div class="row" id="gallery-items"></div>
         </div>
       </section>
     </main>
 
-    <!-- INI BAGIAN FOOTER -->
+    <!-- START FOOTER -->
     <footer class="page-footer font-small blue bg-success">
       <div
         class="footer-copyright text-center py-3 font-weight-bold text-white"
@@ -243,7 +84,7 @@
       </div>
     </footer>
 
-    <!-- INI BAGIAN MODAL -->
+    <!-- START MODAL -->
     <div
       class="modal fade"
       id="galleryModal"
