@@ -1,0 +1,253 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/style.css" media="all" />
+    <title>Web Gallery - Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- INI BAGIAN HEADER -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <a class="navbar-brand font-weight-bold text-white" href="#"
+          ><h4>Web Gallery Arya</h4>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html"><h5>Home</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="gallery.html"
+                ><h5>Gallery</h5></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mt-3">
+      <!-- INI BAGIAN CAROUSEL -->
+      <section id="slider" class="container-fluid">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="https://images.tokopedia.net/img/cache/1208/NsjrJu/2023/5/29/596accb4-08c8-448d-aa90-ce0dffed9a7f.jpg.webp?ect=4g"
+                alt="First slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="https://images.tokopedia.net/img/cache/1208/NsjrJu/2023/5/27/703c4757-fc2a-4e16-ab90-bab9d39cee10.jpg.webp?ect=4g"
+                alt="Second slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="https://images.tokopedia.net/img/cache/1208/NsjrJu/2023/5/25/b69796a6-61f8-4ca7-94de-7993ed43f200.jpg.webp?ect=4g"
+                alt="Third slide"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mt-5">
+          <div class="gallery-container w-3 h-2">
+            <div class="gallery-item">
+              <div class="image">
+                <img
+                  src="https://source.unsplash.com/1600x900/?nature"
+                  alt="nature"
+                />
+              </div>
+              <div class="text">Nature</div>
+            </div>
+          </div>
+
+          <div class="gallery-container w-3 h-3">
+            <div class="gallery-item">
+              <div class="image">
+                <img
+                  src="https://source.unsplash.com/1600x900/?people"
+                  alt="people"
+                />
+              </div>
+              <div class="text">People</div>
+            </div>
+          </div>
+
+          <div class="gallery-container h-2">
+            <div class="gallery-item">
+              <div class="image">
+                <img
+                  src="https://source.unsplash.com/1600x900/?sport"
+                  alt="sport"
+                />
+              </div>
+              <div class="text">Sport</div>
+            </div>
+          </div>
+
+          <div class="gallery-container w-2">
+            <div class="gallery-item">
+              <div class="image">
+                <img
+                  src="https://source.unsplash.com/1600x900/?fitness"
+                  alt="fitness"
+                />
+              </div>
+              <div class="text">Fitness</div>
+            </div>
+          </div>
+
+          <div class="gallery-container w-4 h-1">
+            <div class="gallery-item">
+              <div class="image">
+                <img
+                  src="https://source.unsplash.com/1600x900/?food"
+                  alt="food"
+                />
+              </div>
+              <div class="text">Food</div>
+            </div>
+          </div>
+
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <div class="image">
+                <img
+                  src="https://source.unsplash.com/1600x900/?travel"
+                  alt="travel"
+                />
+              </div>
+              <div class="text">Travel</div>
+            </div>
+          </div>
+
+          <div class="gallery-container w-2 h-2">
+            <div class="gallery-item">
+              <div class="image">
+                <img
+                  src="https://source.unsplash.com/1600x900/?art"
+                  alt="art"
+                />
+              </div>
+              <div class="text">Art</div>
+            </div>
+          </div>
+
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <div class="image">
+                <img
+                  src="https://source.unsplash.com/1600x900/?cars"
+                  alt="cars"
+                />
+              </div>
+              <div class="text">Cars</div>
+            </div>
+          </div>
+
+          <div class="gallery-container w-3 h-2">
+            <div class="gallery-item">
+              <div class="image">
+                <img
+                  src="https://source.unsplash.com/1600x900/?animals"
+                  alt="animals"
+                />
+              </div>
+              <div class="text">Animals</div>
+            </div>
+          </div>
+
+          <div class="gallery-container w-1 h-1">
+            <div class="gallery-item">
+              <div class="image">
+                <img
+                  src="https://source.unsplash.com/1600x900/?film"
+                  alt="film"
+                />
+              </div>
+              <div class="text">Film</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- INI BAGIAN FOOTER -->
+    <footer class="page-footer font-small blue bg-success mt-5">
+      <div
+        class="footer-copyright text-center py-3 font-weight-bold text-white"
+      >
+        Made with ❤️ Copyright © 2023: by
+        <a
+          class="font-weight-bold text-white"
+          href="https://www.gedearya.site/"
+        >
+          I Gede Arya</a
+        >
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
